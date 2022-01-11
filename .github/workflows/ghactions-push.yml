@@ -1,5 +1,4 @@
 name: CI
-uses: hashicorp/setup-terraform@v1.2.1
 
 on:
   workflow_dispatch:
@@ -19,7 +18,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v1.2.1
 
       - name: Terraform Init
         working-directory: Terraform-AWS-Services/elasticsearch/elasticsearch_configuration/
