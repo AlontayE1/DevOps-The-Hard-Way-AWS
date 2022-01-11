@@ -1,4 +1,5 @@
 name: CI
+uses: hashicorp/setup-terraform@v1.2.1
 
 on:
   workflow_dispatch:
